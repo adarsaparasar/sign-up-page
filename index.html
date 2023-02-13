@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<!-- font family -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- font family -->
+<!-- external style stylesheet -->
+<link rel="stylesheet" href="style.css">
+<!-- external stylesheet -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+  <script>
+    
+    function hello(){
+      event.preventDefault();
+      let a= document.forms["myForm"]["Fname"].value;
+      let b=document.forms["myForm"]["Lname"].value;
+      let c=document.forms["myForm"]["Email"].value;
+      let d=document.forms["myForm"]["Password"].value;
+      
+
+      if(a===""){
+        document.getElementById("img1").style.display="inline-flex";
+        document.getElementById("er-fn").innerHTML="First Name cannot be empty";
+        document.getElementById("input1").style.marginTop = "-15px";
+      }
+      if(b===""){
+        document.getElementById("img2").style.display="inline-flex";
+        document.getElementById("er-ln").innerHTML="Last Name cannot be empty";
+        document.getElementById("input2").style.marginTop = "-15px";
+      
+      }
+      if(c===""){
+        document.forms["myForm"]["Email"].value = "email@example/com";
+        document.getElementById("email").style.color="red";
+        document.getElementById("img3").style.display="inline-flex";
+        document.getElementById("er-email").innerHTML="Looks like this is not an email";
+        document.getElementById("input3").style.marginTop = "-15px";
+      }
+      if(d===""){
+        document.getElementById("img4").style.display="inline-flex";
+        document.getElementById("er-pwd").innerHTML="Password cannot be empty";
+        document.getElementById("input4").style.marginTop = "-15px";
+      }
+      
+    }
+    
+  </script>
+</head>
+<body>
+   
+  <div class="container">
+  <div class="desktop-section-1">
+<div class="heading"><h3><b>Learn to code by <br> watching others</h3></b></div>
+
+<div class="para">
+  <p>
+    See how experienced developers solve problems in real-time. <br> Watching scripted tutorials is great, 
+  but understanding how developers think is invaluable.
+   </p>
+</div>
+ 
+</div>
+
+<div class="desktop-section-2">
+
+  <div class="darkblue"><b>Try it free 7 days</b>  then <br>$20/mo. thereafter</div>
+  
+<div class="form">
+  <form action="" name="myForm">       
+    <div id="input1">
+      <input type="text" name="Fname" id="fname" placeholder="First name">
+      <img src="images/icon-error.svg" alt="" style="position:relative;" class="image" id="img1">
+      <small class="notice" id="er-fn"></small>
+    </div>
+   
+    <div id="input2">
+      <input type="text" name="Lname" id="lname" placeholder="Last name">
+      <img src="images/icon-error.svg" alt="" style="position:relative;" class="image" id="img2">
+      <small class="notice" id="er-ln"></small>
+    </div>
+    
+    <div id="input3">
+      <input type="email" name="Email" id="email" placeholder="Email address">
+      <img src="images/icon-error.svg" alt="" style="position:relative;" class="image" id="img3">
+      <small class="notice" id="er-email"></small>
+    </div>
+   
+    <div id="input4">
+      <input type="password" name="Password" id="password" placeholder="Password" >
+      <img src="images/icon-error.svg" alt="" style="position:relative;" class="image" id="img4">
+      <small class="notice" id="er-pwd"></small>
+    </div>
+    
+  
+    <button onclick="hello()"><b>CLAIM YOUR FREE TRIAL</b></button>
+    
+  </form>
+  
+    <p id="tandc">By clicking the button, you are agreeing to our <span class="red"><b>Terms and Services</b></span></p>
+  
+</div>
+ 
+</div>
+</div>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Adarsa</a>.
+    </p>
+  </footer>
+</body>
+</html>

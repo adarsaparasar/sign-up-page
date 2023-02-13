@@ -1,0 +1,301 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    height:max-height;
+    max-width: max-width;
+    background-image: url(images/bg-intro-mobile.png);
+    background-color:  hsl(0, 100%, 74%) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+.heading{
+    font-weight: 800;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.para{
+    color: white;
+    text-align:center;
+    font-weight: 400;
+    width: 100%;
+    margin-top: 2rem;
+    font-size: 14px;
+    word-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.darkblue{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: white;
+    font-size: 14px;
+    box-sizing: border-box; 
+    background-color:hsl(248, 32%, 49%) ;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 2rem;
+    box-shadow: 0px 10px 0px 0px rgba(145, 140, 140, 0.388);
+}
+
+.form{ 
+    padding: 1.85rem;
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 0.625rem;
+    box-shadow: 0px 10px 0px 0px rgba(145, 140, 140, 0.388);
+}
+.notice{
+    display: flex;
+    margin-top:0px;
+    font-size: 14px;
+    justify-content: end;
+    color: red;
+    position: relative;
+    top: -25px;
+    font-style: italic;
+}
+
+#fname{
+    width: 100%;
+    align-self: center;
+    padding: 15px;    
+    border-radius:  5px;
+    box-shadow: none;
+    border: 0.5px solid grey;
+    position: relative;
+    padding-left:5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: rgb(107, 89, 89);
+}
+#lname{
+    width: 100%;
+    align-self: center;
+    padding: 0.938rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    box-shadow: none;
+    border: 0.5px solid grey;
+    position: relative;
+    padding-left: 0.313rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: rgb(107, 89, 89);
+}
+
+#email{
+    width: 100%;
+    align-self: center;
+    padding: 15px;
+    margin-top: 1rem;
+    border-radius:  5px;
+    box-shadow: none;
+    border: 0.5px solid grey;
+    position: relative;
+    padding-left: 0.313rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: rgb(107, 89, 89);
+}
+
+#password{
+    width: 100%;
+    align-self: center;
+    padding: 0.938rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    box-shadow: none;
+    border: 0.5px solid grey;
+    position: relative;
+    padding-left: 0.313rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: rgb(107, 89, 89);
+}
+.form form  > p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    color: rgb(143, 129, 129);    
+}
+.image{
+    position:relative;
+    bottom: 40px;
+    left: 85%;
+    display: none;
+}
+.form button{
+    font-family:'Poppins',sans-serif;
+    font-size:0.625rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color:hsl(154, 59%, 51%);
+    color: white;
+    width: 100%;
+    padding: 0.938rem;
+    border-radius: 5px;
+    border:none;
+    box-shadow: 0px 3px 0px 0px  rgba(78, 69, 69, 0.411);
+    cursor: pointer;
+}
+#tandc{
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    text-align: center;
+    color: rgb(143, 129, 129);    
+}
+.red{
+    color: hsl(0, 100%, 74%);
+}
+
+.attribution{
+    margin-top: 2rem;
+}
+
+@media only screen and (min-width: 1440px) {
+    body {
+      background-image: url(images/bg-intro-desktop.png);
+    }
+    .container{
+        
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 80%;
+    }
+    .heading{
+        font-weight: 800;
+        font-size: 2.5rem;
+        color: white;
+        text-align: start;
+    }
+
+    .para{
+        color: white;
+        text-align:start;
+        font-weight: 400;
+        width: 90%;
+        margin-top: 2rem;
+        font-size: 15px;
+        word-spacing: 1px;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .desktop-section-1{
+        display: flex;
+        flex-direction: column;
+        justify-content:start;
+    }
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    form{
+        padding-right: 0.44rem;
+        padding-left: 0.44rem;
+        width: 30vw;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .form button{
+        font-family:'Poppins',sans-serif;
+        font-size:0.938rem;
+        background-color:hsl(154, 59%, 51%);
+        color: white;
+        width: 100%;
+        padding: 0.938rem;
+        border-radius: 5px;
+        border:none;
+        box-shadow: 0px 3px 0px 0px  rgba(78, 69, 69, 0.411);
+        cursor: pointer;
+    }
+    .image{
+        position: relative;
+        right: 0px;
+        left: 13.5vw;
+        display: none;
+        top: -35px;
+    }
+   
+    #fname{
+        width: 100%;
+        position: relative; 
+        padding-left: 30px;
+        box-sizing: border-box;
+        text-align: start;
+        /* margin-bottom: 1rem; */
+    }
+    #lname{
+        width: 100%;
+        position: relative;
+        padding-left: 30px;
+        /* margin-bottom: 1rem; */
+        box-sizing: border-box;
+        text-align: start;
+    }
+    #email{
+        width: 100%;
+        position: relative;
+        padding-left: 30px;
+        box-sizing: border-box;
+        text-align: start;
+        /* margin-bottom: 1rem; */
+    }
+    #password{
+        width: 100%;
+        position: relative;
+        padding-left: 30px;
+        box-sizing: border-box;
+        text-align:start;
+        /* margin-bottom: 1rem; */
+    }
+    .darkblue br{
+        display: none;
+        padding: 3rem;
+        box-shadow: 0.398rem;
+    }
+    
+    .desktop-section-2{
+        width: 100%;
+    }
+    .notice{
+        display: flex;
+        margin-top:0px;
+        font-size: 14px;
+        justify-content: end;
+        color: red;
+        position: relative;
+        top: -20px;
+        font-style: italic;
+    }
+  }
